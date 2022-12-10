@@ -1,1 +1,6 @@
-console.log("Alert!");
+import { createLandingPage } from "./landing";
+
+
+
+
+createLandingPage();
