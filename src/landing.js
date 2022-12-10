@@ -1,6 +1,13 @@
-function appendToLanding() {
+function createLandingPage() {
 
 
-    let div = document.createElement("div");
+
+
+
 
 }
+
+
+
+export { createLandingPage }
+from "landing.js";
