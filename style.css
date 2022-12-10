@@ -27,7 +27,6 @@ body {
     background-color: #151515;
     overflow: hidden;
     width: 100%;
-    border: 2px solid red;
 }
 
 .nav-right {
@@ -64,9 +63,9 @@ body {
     background-image: url("./Images/restaurant-background.jpg");
 }
 
-.dText {
+.background-text {
     font-size: 36px;
-    margin: 5%;
+    margin: 2%;
 }
 
 .after-background {
