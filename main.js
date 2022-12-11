@@ -1,1 +1,96 @@
-(()=>{"use strict";!function(){const t=document.getElementById("content");t.appendChild(function(){const t=document.createElement("div");t.classList.add("topnav");const e=document.createElement("a");e.classList.add("active"),e.textContent="Home";const n=document.createElement("div");n=classList.add("nav-right");const d=createElement("a");d.textContent="Menu";const a=createElement("a");a.textContent="About";const c=createElement("a");return c.textContent="Contact",n.appendChild(d),n.appendChild(a),n.appendChild(c),t.appendChild(e),t.appendChild(n),t}()),t.appendChild(function(){let t=document.createElement("div");t.classList.add("background-image");let e=document.createElement("div");return e.classList.add("background-text"),e.textContent("Dorsia"),t.appendChild(e),t}())}()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _landing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./landing */ \"./src/landing.js\");\n\r\n\r\n\r\n(0,_landing__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\r\n\r\n\r\n(0,_landing__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://package/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/landing.js":
+/*!************************!*\
+  !*** ./src/landing.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createNavBar() {\r\n\r\n    const navDiv = document.createElement(\"div\");\r\n    navDiv.classList.add(\"topnav\");\r\n\r\n    const aHome = document.createElement(\"div\");\r\n    aHome.classList.add(\"nav-text\");\r\n    aHome.textContent = \"Home\";\r\n\r\n    navDiv.appendChild(aHome);\r\n\r\n\r\n\r\n\r\n    //navDiv ready to append to content\r\n\r\n\r\n\r\n    return navDiv;\r\n}\r\n\r\n\r\nfunction backgroundImage() {\r\n\r\n    let backgroundImageDiv = document.createElement(\"div\");\r\n    backgroundImageDiv.classList.add(\"background-image\");\r\n\r\n\r\n    return backgroundImageDiv;\r\n}\r\n\r\n\r\n\r\n\r\nfunction initWebsite() {\r\n    const content = document.getElementById(\"content\");\r\n    content.appendChild(createNavBar());\r\n    content.appendChild(backgroundImage());\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initWebsite);\n\n//# sourceURL=webpack://package/./src/landing.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
