@@ -31,17 +31,21 @@ function createNavBar() {
     return navDiv;
 }
 
-/* function backgroundImage() {
+function backgroundImage() {
     let backgroundImageDiv = document.createElement("div");
     backgroundImageDiv.classList.add("background-image");
+    const bText = document.createElement("div");
+    bText.classList.add("background-text");
+    bText.textContent = "Dorsia";
+    backgroundImageDiv.appendChild(bText);
     return backgroundImageDiv;
-} */
+}
 
 
 function initWebsite() {
     const content = document.getElementById("content");
     content.appendChild(createNavBar());
-    //  content.appendChild(backgroundImage());
+    content.appendChild(backgroundImage());
 }
 
 export default initWebsite;
