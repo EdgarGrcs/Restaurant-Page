@@ -36,7 +36,7 @@ body {
 
 /* Style the links inside the navigation bar */
 
-.topnav a {
+.nav-text {
     float: left;
     display: block;
     color: #EAD2AB;
@@ -47,13 +47,17 @@ body {
     border-bottom: 3px solid transparent;
 }
 
-.topnav a:hover {
-    border-bottom: 3px solid #EAD2AB;
-}
 
-.topnav a.active {
+/*.topnav,
+nav-text:hover {
     border-bottom: 3px solid #EAD2AB;
-}
+} */
+
+
+/*.topnav,
+nav-text.active {
+    border-bottom: 3px solid #EAD2AB;
+} */
 
 .background-image {
     background-color: grey;
