@@ -1,22 +1,21 @@
-function createLandingPage() {
+function createNavBar() {
 
-    let content = document.getElementById("content");
 
-    let navDiv = document.createElement("div");
+    const navDiv = document.createElement("div");
     navDiv.classList.add("topnav");
 
-    let aHome = document.createElement("a");
+    const aHome = document.createElement("a");
     aHome.classList.add("active");
     aHome.textContent = "Home";
 
-    let divNavRight = document.createElement("div");
+    const divNavRight = document.createElement("div");
     divNavRight = classList.add("nav-right");
 
-    let aMenu = createElement("a");
+    const aMenu = createElement("a");
     aMenu.textContent = "Menu";
-    let aAbout = createElement("a");
+    const aAbout = createElement("a");
     aAbout.textContent = "About";
-    let aContact = createElement("a");
+    const aContact = createElement("a");
     aContact.textContent = "Contact";
 
     divNavRight.appendChild(aMenu);
@@ -27,7 +26,15 @@ function createLandingPage() {
     navDiv.appendChild(divNavRight);
 
     //navDiv ready to append to content
-    content.appendChild(navDiv);
+
+
+    return navDiv;
+}
+
+
+
+
+function backgroundImage() {
 
     let backgroundImageDiv = document.createElement("div");
     backgroundImageDiv.classList.add("background-image");
@@ -35,21 +42,24 @@ function createLandingPage() {
     let backgroundTextDiv = document.createElement("div");
     backgroundTextDiv.classList.add("background-text");
     backgroundTextDiv.textContent("Dorsia");
-
     backgroundImageDiv.appendChild(backgroundTextDiv);
 
-    //background image ready to append to content
-    content.appendChild(backgroundImageDiv);
-
-
-
-
-
-
-
-    return content;
+    return backgroundImageDiv;
 }
 
 
 
-export default createLandingPage;
+
+
+
+
+
+
+function initWebsite() {
+    const content = document.getElementById("content");
+    content.appendChild(createNavBar());
+
+    content.appendChild(backgroundImage());
+}
+
+export default initWebsite;

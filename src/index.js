@@ -1,6 +1,4 @@
-import { createLandingPage } from "./landing";
+import initWebsite from "./landing";
 
 
-
-
-createLandingPage();
+initWebsite();
