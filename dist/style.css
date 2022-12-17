@@ -135,24 +135,41 @@ nav-text.active {
     color: inherit;
 }
 
+.chefAboutSection {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.chefSectionTitle {
+    margin: 5%;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    align-items: center;
+    font-size: 36px;
+    display: flex;
+}
+
 .chef-section {
-    height: 50%;
-    width: 100%;
     background-color: #151515;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .chef-div {
-    height: 30%;
-    width: 20%;
+    height: 100%;
+    width: 100%;
     margin: 2%;
 }
 
 .chef-img {
-    height: 100%;
-    width: 100%;
+    height: 250px;
+    width: 260px;
+    border-radius: 5%;
+    border: 2px solid #EAD2AB;
+    ;
+    ;
 }
 
 .quotes {

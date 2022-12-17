@@ -4,8 +4,8 @@ import initAboutPage from "./aboutPage";
 
 
 
-//initNavBar();
+initNavBar();
 //initWebsite();
 
 
-initAboutPage();
+//initAboutPage();
