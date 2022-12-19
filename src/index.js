@@ -1,11 +1,11 @@
 import initWebsite from "./landing";
 import initNavBar from "./navbar";
 import initAboutPage from "./aboutPage";
+import initMenuPage from "./menuPage";
 
 
-
-initNavBar();
+//initNavBar();
 //initWebsite();
-
+initMenuPage();
 
 //initAboutPage();
