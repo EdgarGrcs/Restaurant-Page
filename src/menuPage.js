@@ -78,7 +78,6 @@ function createMenuPage() {
 }
 
 
-
 function initMenuPage() {
 
     const content = document.getElementById("content");
