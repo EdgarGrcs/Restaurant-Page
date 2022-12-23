@@ -4,6 +4,8 @@ import initMenuPage from "./menuPage";
 
 //Implement method that removes active class from buttons
 
+const content = document.getElementById("content");
+
 function setActiveClass(button) {
     const navButtons = document.querySelectorAll(".nav-text");
 
@@ -59,6 +61,7 @@ function createNavBar() {
         if (contactDiv.classList.contains("active"))
             return;
         setActiveClass(contactDiv);
+        //contact method missing
     })
 
     navRight.appendChild(menuDiv);
@@ -75,13 +78,13 @@ function createNavBar() {
 
 
 function initNavBar() {
-    const content = document.getElementById("content");
-    content.appendChild(createNavBar());
+    const main = document.getElementById("main");
+    main.appendChild(createNavBar());
 }
 
 initNavBar();
 
-initWebsite();
+
 //initMenuPage();
 
 

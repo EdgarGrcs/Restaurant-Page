@@ -43,6 +43,7 @@ function creatorTag() {
 
 function initWebsite() {
     const content = document.getElementById("content");
+    content.textContent = "";
     content.appendChild(backgroundImage());
     content.appendChild(creatorTag());
 }

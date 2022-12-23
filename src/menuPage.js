@@ -77,12 +77,37 @@ function createMenuPage() {
     return menuSection;
 }
 
+function createMenuPagePictures() {
+    const secondMenuSection = document.createElement("div");
+    secondMenuSection.classList.add("secondMenuSection");
+
+    const menuPicture1 = document.createElement("img");
+    menuPicture1.classList.add("menuPicture");
+    menuPicture1.setAttribute("src", "Images/golden-steak.jpg");
+
+    const menuPicture2 = document.createElement("img");
+    menuPicture2.classList.add("menuPicture");
+    menuPicture2.setAttribute("src", "Images/plate.jpg");
+
+    const menuPicture3 = document.createElement("img");
+    menuPicture3.classList.add("menuPicture");
+    menuPicture3.setAttribute("src", "Images/wagyu-beef.jpg");
+
+    secondMenuSection.appendChild(menuPicture1);
+    secondMenuSection.appendChild(menuPicture2);
+    secondMenuSection.appendChild(menuPicture3);
+
+
+    return secondMenuSection;
+}
+
 
 function initMenuPage() {
 
     const content = document.getElementById("content");
     content.textContent = "";
     content.appendChild(createMenuPage());
+    content.appendChild(createMenuPagePictures());
 }
 
 export default initMenuPage;
