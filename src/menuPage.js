@@ -46,7 +46,7 @@ function createMenuPage() {
     servings5.textContent = "Sturgeon";
     const servingDescription5 = document.createElement("div");
     servingDescription5.classList.add("serving-description");
-    servingDescription1.textContent = "Smoked Potato Salad, Trout Roe, Russian Cream, Dill";
+    servingDescription5.textContent = "Smoked Potato Salad, Trout Roe, Russian Cream, Dill";
 
     innerLeft.appendChild(menuText);
     innerLeft.appendChild(servings1);
@@ -81,6 +81,7 @@ function createMenuPage() {
 function initMenuPage() {
 
     const content = document.getElementById("content");
+    content.textContent = "";
     content.appendChild(createMenuPage());
 }
 
