@@ -125,8 +125,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: #151515;
+    background-color: black;
+    color: #EAD2AB;
 }
 
 .git-icon {
@@ -164,19 +164,24 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
+    justify-content: center;
 }
 
 .chef-div {
     height: 100%;
     width: 100%;
-    margin: 2%;
+    margin: 1%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
 .chef-img {
-    height: 250px;
-    width: 260px;
-    border-radius: 5%;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
     border: 2px solid #EAD2AB;
+    margin: 2%;
 }
 
 .quotes {
@@ -255,5 +260,7 @@ body {
     height: 90%;
     width: 30%;
     margin: 2%;
-    border: 2px solid #EAD2AB;
 }
+
+
+/*Contact Page*/
