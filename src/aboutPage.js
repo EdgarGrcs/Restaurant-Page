@@ -35,6 +35,7 @@ function createAboutPage() {
 function createChefSection() {
 
     const chefAboutSection = document.createElement("div");
+    chefAboutSection.classList.add("chefAboutSection");
 
     const title = document.createElement("div");
     title.classList.add("chefSectionTitle")
@@ -72,7 +73,7 @@ function createChefSection() {
     chefName2.textContent = "Bob Belcher";
     const chefQuote2 = document.createElement("div");
     chefQuote2.classList.add("quotes");
-    chefQuote2.textContent = "\"Linda, Torpedo Jones said he liked my burger!I want that on my tombstone.Seriously, I do .\"";
+    chefQuote2.textContent = "\"Linda, Torpedo Jones said he liked my burger! I want that on my tombstone. Seriously, I do .\"";
 
     chefDiv2.appendChild(chefImg2);
     chefDiv2.appendChild(chefName2);
@@ -102,7 +103,7 @@ function createChefSection() {
     chefName4.textContent = "Mung Daal";
     const chefQuote4 = document.createElement("div");
     chefQuote4.classList.add("quotes");
-    chefQuote4.textContent = "\"You don 't know what you're missing...\"";
+    chefQuote4.textContent = "\"You don't know what you're missing...\"";
 
     chefDiv4.appendChild(chefImg4);
     chefDiv4.appendChild(chefName4);
