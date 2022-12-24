@@ -39,9 +39,6 @@ body {
     float: right;
 }
 
-
-/* Style the links inside the navigation bar */
-
 .nav-text {
     float: left;
     display: block;
@@ -108,7 +105,6 @@ body {
 
 .intro {
     display: flex;
-    margin: 5%;
     justify-content: center;
     border-bottom: 2px solid white;
     align-items: center;
@@ -125,7 +121,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #151515;
     color: #EAD2AB;
 }
 
@@ -145,9 +141,7 @@ body {
 /*About Page*/
 
 .chefAboutSection {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 
 .chefSectionTitle {
@@ -174,6 +168,9 @@ body {
     display: inline-block;
     justify-content: center;
     align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .chef-img {
@@ -187,6 +184,7 @@ body {
 .quotes {
     font-size: 15px;
     color: white;
+    text-align: center;
 }
 
 
@@ -264,3 +262,100 @@ body {
 
 
 /*Contact Page*/
+
+.contactPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.contactLeftSide {
+    width: 50%;
+    height: 100%;
+}
+
+.contactUs {
+    border-bottom: 2px solid white;
+    height: 3%;
+    width: 25%;
+    margin-left: 5%;
+}
+
+.contactRightSide {
+    height: 100%;
+    width: 50%;
+}
+
+.contactRightSideTop {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactRightSideBottom {
+    height: 50%;
+    width: 100%;
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.rightSideDiv {
+    height: 90%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.location {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.openingHours {
+    width: 50%;
+    height: 6%;
+    border-bottom: 2px solid white;
+    justify-content: center;
+    display: flex;
+    margin: 2%;
+}
+
+.reservation {
+    height: 94%;
+    width: 100%;
+    padding: 25px;
+}
+
+input,
+textarea {
+    display: flex;
+    justify-content: center;
+    background: #151515;
+    border: 2px solid #EAD2AB;
+}
+
+label {
+    font-size: large;
+}
+
+input {
+    height: 35px;
+    background-color: #151515;
+    border: 2px solid #EAD2AB;
+    color: white;
+}
+
+.submitButton {
+    color: #EAD2AB;
+    font-weight: bold;
+    height: 45px;
+    width: 80px;
+    margin-top: 2%;
+    background-color: #151515;
+    border: 2px solid #EAD2AB;
+    font-family: 'Times New Roman', Times, serif;
+}
