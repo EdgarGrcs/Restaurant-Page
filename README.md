@@ -6,3 +6,4 @@ The skills practiced in this project:
 - Javascript
 - DOM manipulation
 - Usage of webpack
+- Tabbed browsing
