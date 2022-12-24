@@ -1,11 +1,19 @@
 import initWebsite from "./landing";
 import initAboutPage from "./aboutPage";
 import initMenuPage from "./menuPage";
+import initContactPage from "./contactPage";
 
 //Implement method that removes active class from buttons
 
 const content = document.getElementById("content");
 
+
+/**
+ * This function sets the button on the navbar to active, meaning that the button will be 
+ * underlined.
+ * Clicking on an other button will remove the underline from the current button, and underline the
+ * button that you have clicked on.
+ *  */
 function setActiveClass(button) {
     const navButtons = document.querySelectorAll(".nav-text");
 
@@ -17,7 +25,11 @@ function setActiveClass(button) {
     button.classList.add("active");
 }
 
-
+/**
+ * This function is used to switch between different tabs
+ * When a button on the navbar is clicked, the content inside the "content" element is removed and
+ * replaced with the elements of the tab that you clicked on
+ */
 function createNavBar() {
 
     const navDiv = document.createElement("div");
@@ -61,7 +73,7 @@ function createNavBar() {
         if (contactDiv.classList.contains("active"))
             return;
         setActiveClass(contactDiv);
-        //contact method missing
+        initContactPage();
     })
 
     navRight.appendChild(menuDiv);
@@ -72,7 +84,6 @@ function createNavBar() {
     navDiv.appendChild(navRight);
 
 
-    //navDiv ready to append to content
     return navDiv;
 }
 
@@ -83,9 +94,4 @@ function initNavBar() {
 }
 
 initNavBar();
-
-
-//initMenuPage();
-
-
-//initAboutPage();
+initWebsite();
