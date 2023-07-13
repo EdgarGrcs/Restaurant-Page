@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EdgarGrcs/Restaurant-Page.git"
+    "url": "https://github.com/EdgarGrcs/Restaurant-Page.git"
   },
   "author": "EdgarGrcs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EdgarGrcs/Restaurant-Page/issues"
   },
-  "homepage": "https://github.com/EdgarGrcs/Restaurant-Page#readme",
+  "homepage": "https://github.com/EdgarGrcs/Restaurant-Page",
   "devDependencies": {
     "css-loader": "^6.7.2",
     "style-loader": "^3.3.1",
